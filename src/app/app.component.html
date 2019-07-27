@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <h1>Welcome to Post Web Site!</h1>
+  
+  <ul class="list-group">
+      <app-mon-post *ngFor="let post of articles"
+        [title]="post.titre"
+        [content]="post.text">
+
+      </app-mon-post>
+
+  </ul>
+  
+
+<router-outlet></router-outlet>
